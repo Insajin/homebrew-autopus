@@ -5,21 +5,21 @@
 class Auto < Formula
   desc "Agentic Development Kit for coding CLIs (the auto CLI)"
   homepage "https://github.com/Insajin/autopus-adk"
-  version "0.50.62"
+  version "0.50.63"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.62/autopus-adk_0.50.62_darwin_amd64.tar.gz"
-      sha256 "7605c64c9fea5cf8d47f666a24c90119e2c37f83f88c5c571a5697bfd47b7aa8"
+      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.63/autopus-adk_0.50.63_darwin_amd64.tar.gz"
+      sha256 "b936021013f73fbd192caf05e66e894661cfd813378bbc1ec6f62f8e6e250cb1"
 
       define_method(:install) do
         bin.install "auto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.62/autopus-adk_0.50.62_darwin_arm64.tar.gz"
-      sha256 "be6b9ccb1d7cc79072815340f3bd4e13277db088ec31cd5c352bc80f71806291"
+      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.63/autopus-adk_0.50.63_darwin_arm64.tar.gz"
+      sha256 "c83fd80e792753ec815188a77703c0f828188414541e26b76ceeeaa17fe3a51e"
 
       define_method(:install) do
         bin.install "auto"
@@ -29,15 +29,15 @@ class Auto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.62/autopus-adk_0.50.62_linux_amd64.tar.gz"
-      sha256 "d0cf88e0b9b5ccbe5f6a9344719d350bff219838447ed9390925cda3317769b8"
+      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.63/autopus-adk_0.50.63_linux_amd64.tar.gz"
+      sha256 "1b0ab2f8754885b6f49b0e7ea56d12a8a829f5ef6863e36c715520a586794d53"
       define_method(:install) do
         bin.install "auto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.62/autopus-adk_0.50.62_linux_arm64.tar.gz"
-      sha256 "a8aac4055c20909f7ac18936ed41d9f596fbed64527a133348075aa47fff874b"
+      url "https://github.com/Insajin/autopus-adk/releases/download/v0.50.63/autopus-adk_0.50.63_linux_arm64.tar.gz"
+      sha256 "9077cde1dd5b50b40a4c5c3ac14751c2259efcc79191993297daf8526c86f913"
       define_method(:install) do
         bin.install "auto"
       end
